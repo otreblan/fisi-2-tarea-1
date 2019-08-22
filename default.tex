@@ -77,7 +77,8 @@
 %}}}
 % Aquí empieza el documento{{{
 \begin{document}
-\maketitle
+%\maketitle
+\textbf{Alberto Oporto Ames \#139}
 \thispagestyle{fancy}
 
 % Preguntas {{{
@@ -98,6 +99,7 @@
 		¿Por qué esto tiende a ocurrir más en los climas secos que en los húmedos?
 
 	\item ¿Por qué los metales son buenos conductores de la electricidad?
+		\subitem Porque los átomos de los metales comparten sus electrones entre sí.
 \end{enumerate}
 % }}}
 % Problemas {{{
@@ -111,20 +113,44 @@
 		mientras que $B$ tiene un exceso de $10^{11}$ electrones.
 		\begin{enumerate}
 			\item Determine la carga de la esfera $B$.
+				\begin{align*}
+					q_B &= n_Bq_e\\
+					q_B &= 10^{11}*-1.6*10^{-19}C\\
+					\Aboxed
+					{
+						q_B &= -1.6*10^{-8}C
+					}
+				\end{align*}
 
 			\item Si se aproxima la esfera $A$ a $B$,
 				¿habrá fuerza eléctrica entre ellas?
 				¿Por qué?
+				\subitem No.
+				\subitem Porque A es neutra.
 
 			\item Se aproxima la esfera $B$ a $C$,
 				y se nota que hay una fuerza de atracción entre las dos esferas.
 				¿Es posible saber el signo de la esfera $C$ con esta información?
 				¿Y si la fuerza fuese de repulsión?
+				\subitem Sí, es positiva $(+)$
+				\subitem También, sería negativa $(-)$
 
 			\item La esfera $B$ se pone en contacto con $A$, y luego con $C$, por separado.
 				Luego de esta operación resulta que
 				las cargas de $A$ y $C$ están en una relación de 4 a 1.
 				Determine la carga de la esfera $C$.
+				\begin{align*}
+					\intertext{Al inicio}
+					q_A &= 0\\
+					q_B &= -1.6*10^{-8}C
+					\intertext{Después del primer contacto}
+					q_A&=-0.8*10^{-8}C\\
+					q_B &=-0.8*10^{-8}C
+					\intertext{Después del segundo contacto}
+					q_B &= q_C\\
+					\frac{q_A}{q_C} &= \frac{4}{1}\\
+					q_c &= \frac{-0.8*10^{-8}C}{4}=\boxed{-0.2*10^{-8}C}
+				\end{align*}
 		\end{enumerate}
 
 	\setcounter{enumi}{4}
