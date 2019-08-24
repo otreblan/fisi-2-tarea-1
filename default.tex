@@ -24,6 +24,12 @@
 
 % Esto sirve para poner ecuaciones
 \usepackage{mathtools}
+\allowdisplaybreaks
+
+% Esto sirve para reducir el espacio vertical entre ecuaciones
+%\AtBeginDocument{%
+	%\setlength\abovedisplayskip{0pt}
+	%\setlength\belowdisplayskip{0pt}}
 
 % Esto sirve para poner imágenes{{{
 \usepackage{graphicx}
@@ -94,6 +100,10 @@
 		ocasionando que los trozos de papel se acerquen a la varilla.
 		Si la cantidad de lados positivos y negativos es igual,
 		¿por qué no se anulan entre sí las fuerzas de atracción y de repulsión?
+		\subitem Porque los lados positivos están más cerca a la varilla que los lados
+			neagtivos.
+			Eso hace que el módulo de la fuerza de los lados positivos sea mayor
+			que la de los lados negativos.
 
 	\item Si usted camina sobre una alfombra de nailon y luego toca un objeto metálico grande,
 		como una perilla, puede recibir una chispa y una descarga.
@@ -178,10 +188,10 @@
 					%
 					\Aboxed{
 						\vec{F} &= \Big{(}
-						\frac{81*10^{-3}}{50^{ \frac{3}{2} }}\hat{\imath}+
-						\frac{108*10^{-3}}{50^{ \frac{3}{2} }}\hat{\jmath}-
-						\frac{135*10^{-3}}{50^{ \frac{3}{2} }}\hat{k}
-						\Big{)}N
+						\frac{81}{50^{ \frac{3}{2} }}\hat{\imath}+
+						\frac{108}{50^{ \frac{3}{2} }}\hat{\jmath}-
+						\frac{135}{50^{ \frac{3}{2} }}\hat{k}
+						\Big{)}*10^{-3}N
 					}
 				\end{align*}
 
@@ -200,35 +210,68 @@
 					\vec{E}_1 &= \frac{27}{13^{ \frac{3}{2} }}*10^3\frac{N}{C}*
 					(-3\hat{\imath}-2\hat{\jmath} )\\
 					%
-					\vec{E}_1 &= \Big{(} \frac{-81000}{13^{ \frac{3}{2} }}\hat{\imath}-
-					\frac{54000}{13^{ \frac{3}{2} }} \hat{\jmath}
-					\Big{)} \frac{N}{C}\\
+					\vec{E}_1 &= \Big{(} \frac{-81}{13^{ \frac{3}{2} }}\hat{\imath}-
+					\frac{54}{13^{ \frac{3}{2} }} \hat{\jmath}
+					\Big{)}*10^3 \frac{N}{C}\\
 					\\
 					%
-					\vec{E_2} &= k \frac{q_2}{r^2_2} \Big{(} \frac{-B}{r_2} \Big{)}\\
+					\vec{E}_2 &= k \frac{q_2}{r^2_2} \Big{(} \frac{-B}{r_2} \Big{)}\\
 					%
-					\vec{E_2} &= \cancel{9}*10^9 \frac{N\cancel{m^2}}{C}*
-					\frac{-1*10^{-6}C}{\cancel{9}\cancel{m^2}}*
-					\Big{(} \frac{(2\hat{\jmath}-5\hat{k})\cancel{m}}{3\cancel{m}} \Big{)}\\
+					\vec{E}_2 &= 9*10^9 \frac{N\cancel{m^2}}{C^2}*
+					\frac{-1*10^{-6}C}{29\cancel{m^2}}*
+					\Big{(} \frac{(2\hat{\jmath}-5\hat{k})\cancel{m}}{\sqrt{29}\cancel{m}} \Big{)}\\
 					%
-					\vec{E_2} &= -1*10^3 \frac{N}{C}*
+					\vec{E}_2 &= \frac{-9*10^3}{29^{ \frac{3}{2} }}  \frac{N}{C}*
 					(2\hat{\jmath}-5\hat{k})\\
-					\vec{E_2} &= (-2000 \hat{\jmath} + 5000 \hat{k}) \frac{N}{C}\\
+					%
+					\vec{E}_2 &= \Big{(} \frac{-18}{29^{ \frac{3}{2} }}\hat{\jmath}+
+					\frac{45}{29^{ \frac{3}{2} }}\hat{k}
+					\Big{)}*10^3\frac{N}{C}\\
 					\\
 					%
-					\vec{E_t} &=  \Big{(} \frac{-81000}{13^{ \frac{3}{2} }}\hat{\imath}-
-					\frac{54000}{13^{ \frac{3}{2} }} \hat{\jmath}
-					\Big{)} \frac{N}{C}+
-					(-2000 \hat{\jmath} + 5000 \hat{k}) \frac{N}{C}\\
+					\vec{E}_t &=  \Big{(} \frac{-81}{13^{ \frac{3}{2} }}\hat{\imath}-
+					\frac{54}{13^{ \frac{3}{2} }} \hat{\jmath}
+					\Big{)}*10^3\frac{N}{C}+
+					\Big{(} \frac{-18}{29^{ \frac{3}{2} }}\hat{\jmath}+
+					\frac{45}{29^{ \frac{3}{2} }}\hat{k}
+					\Big{)}*10^3\frac{N}{C}\\
 					%
-					\vec{E_t} &= \Big{(} \frac{-81000}{13^{ \frac{3}{2} }}\hat{\imath}-
-					\frac{54000+2000*13^{ \frac{3}{2} }}{13^{ \frac{3}{2} }}
-					+ 5000 \hat{k}
-					\Big{)} \frac{N}{C}
+					\vec{E}_t &= \Big{(} \frac{-81}{13^{ \frac{3}{2} }}\hat{\imath}-
+					\Big{(} \frac{54}{13^{ \frac{3}{2} }}+
+					\frac{18}{29^{ \frac{3}{2} }}
+					\Big{)}\hat{\jmath}+
+					\frac{45}{29^{ \frac{3}{2} }}\hat{k}
+					\Big{)}*10^3 \frac{N}{C}
 				\end{align*}
 
 			\item La fuerza eléctrica sobre la carga $q_3(-2\mu C)$,
 				que se sitúa en el origen de coordenadas.
+				\begin{align*}
+					\vec{F}_t &= \vec{F}_{1\_3}+\vec{F}_{2\_3}\\
+					\\
+					%
+					\vec{F}_{1\_3} &= k \frac{q_1q_3}{r^2_{1\_3}}*
+					\Big{(} \frac{-A}{r^2_{1\_3}} \Big{)}\\
+					%
+					\vec{F}_{1\_3} &= 9*10^9 \frac{N\cancel{m^2}}{\cancel{C^2}}*
+					\frac{3*10^{-6}\cancel{C}*-2*10^{-6}\cancel{C}}{13\cancel{m^2}}*
+					\Big{(} \frac{(-3\hat{\imath}-2\hat{\jmath})\cancel{m}}{\sqrt{13}\cancel{m}} \Big{)}\\
+					%
+					\vec{F}_{1\_3} &= \frac{-54*10^{-3}}{13^{ \frac{3}{2} }}N*
+					(-3\hat{\imath}-2\hat{\jmath})\\
+					%
+					\vec{F}_{1\_3} &= \Big{(} \frac{162}{13^{ \frac{3}{2} }} \hat{\imath}+
+					\frac{108}{13^{ \frac{3}{2} }} \hat{\jmath}
+					\Big{)}*10^{-3}N\\
+					\\
+					%
+					\vec{F}_{2\_3} &= k \frac{q_2q_3}{r^2_{2\_3}}*
+					\Big{(} \frac{-B}{r^2_{2\_3}} \Big{)}\\
+					%
+					\vec{F}_{2\_3} &= 9*10^9 \frac{N\cancel{m^2}}{\cancel{C^2}}*
+					\frac{-1*10^{-6}\cancel{C}*-2*10^{-6}\cancel{C}}{29\cancel{m^2}}*
+					\Big{(} \frac{(-3\hat{\imath}-2\hat{\jmath})\cancel{m}}{\sqrt{29}\cancel{m}} \Big{)}\\
+				\end{align*}
 		\end{enumerate}
 
 	\setcounter{enumi}{8}
