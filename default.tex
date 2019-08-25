@@ -338,8 +338,8 @@
 			\vec{R} & && \text{Reacción}\\
 			\vec{T}_C &= \vec{P}_2 + \vec{F} && \text{Tensión en C}\\
 			\vec{T}_B & && \text{Tensión en B}\\
-			\hat{T}_B &= \frac{-1}{3} \hat{\jmath}+
-			\frac{2\sqrt{2}}{3} \hat{\imath} && \text{Vector unitario de la tensión B}\\
+			\hat{T}_B &= \frac{-1}{3} \hat{\imath}+
+			\frac{2\sqrt{2}}{3} \hat{\jmath} && \text{Vector unitario de la tensión B}\\
 			\hat{AB} &= \frac{2\sqrt{2}}{3} \hat{\imath}+
 			\frac{1}{3} \hat{\jmath} && \text{Vector unitario de la barra}\\
 			\vec{AB} & && \text{Distancia hasta el punto B}
@@ -357,18 +357,18 @@
 				\end{align*}
 			\item
 				\begin{align*}
-					\sum \uptau &= \vec{P}_1\cdot\hat{AB}* \frac{L}{2}+
+					\sum \uptau_i &= \vec{P}_1\cdot\hat{AB}* \frac{L}{2}+
 					\vec{T}_C\cdot\hat{AB}*L+
 					\cancel{\vec{R}*0m}+
 					\uptau_B=0\\
 					%
-					\uptau_B &= \frac{-110N}{3}L = \vec{T}_B \cdot\vec{AB} = |\vec{T}_B|*|\vec{AB}|*\sen{\alpha}\\
-					\frac{-110N}{\cancel{3}}L &= |\vec{T}_B|*|\vec{AB}|*\cancel{\sen{\alpha}}\\
-					|\vec{T}_B| &= -110N\frac{L}{|\vec{AB}|}\\
+					\uptau_B &= \frac{110N}{3}L = \vec{T}_B \cdot\vec{AB} = |\vec{T}_B|*|\vec{AB}|*\sen{\alpha}\\
+					\frac{110N}{\cancel{3}}L &= |\vec{T}_B|*|\vec{AB}|*\cancel{\sen{\alpha}}\\
+					|\vec{T}_B| &= 110N\frac{L}{|\vec{AB}|}\\
 					\\
 					\vec{T}_B &= |\vec{T}_B|*\hat{T}_B\\
 					\\
-					\vec{T}_B &= -110N\frac{L}{|\vec{AB}|}*\Big{(}
+					\vec{T}_B &= 110N\frac{L}{|\vec{AB}|}*\Big{(}
 					\frac{-1}{3}\hat{\imath} +
 					\frac{2\sqrt{2}}{3}\hat{\jmath}
 					\Big{)}\\
@@ -376,14 +376,32 @@
 					\Aboxed
 					{
 						\vec{T}_B &= \Big{(}
-						\frac{110}{3}\hat{\imath} -
+						\frac{-110}{3}\hat{\imath} +
 						\frac{220\sqrt{2}}{3}\hat{\jmath}
 						\Big{)}N\frac{L}{|\vec{AB}|}
 					}
 				\end{align*}
 			\item
 				\begin{align*}
-					a
+					\sum \vec{F}_i &= \vec{R}+\vec{T}_B+\vec{P_1}+\vec{T}_C = 0\\
+					\vec{R} &= -\vec{T}_B-\vec{P_1}-\vec{T}_C\\
+					%
+					\vec{R} &=
+					\Big{(}
+					\frac{110}{3}\hat{\imath} -
+					\frac{220\sqrt{2}}{3}\hat{\jmath}
+					\Big{)}N\frac{L}{|\vec{AB}|}+
+					80N\hat{\jmath}+70N\hat{\jmath}\\
+					%
+					\Aboxed
+					{
+						\vec{R} &= \Big{(}
+						\frac{110}{3} * \frac{L}{|\vec{AC}|}\hat{\imath}+
+						\Big{(}
+						150 - \frac{220\sqrt{2}}{3} * \frac{L}{|\vec{AB}|}
+						\Big{)}\hat{\jmath}
+						\Big{)}N
+					}
 				\end{align*}
 		\end{enumerate}
 \end{enumerate}
