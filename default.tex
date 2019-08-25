@@ -24,6 +24,7 @@
 
 % Esto sirve para poner ecuaciones
 \usepackage{mathtools}
+\usepackage{upgreek}
 \allowdisplaybreaks
 
 % Esto sirve para reducir el espacio vertical entre ecuaciones
@@ -186,7 +187,8 @@
 					\vec{F} &= \frac{-27}{50^ \frac{3}{2} } *10^{-3} N*
 					(-3\hat{\imath}-4\hat{\jmath}+5\hat{k})\\
 					%
-					\Aboxed{
+					\Aboxed
+					{
 						\vec{F} &= \Big{(}
 						\frac{81}{50^{ \frac{3}{2} }}\hat{\imath}+
 						\frac{108}{50^{ \frac{3}{2} }}\hat{\jmath}-
@@ -239,7 +241,8 @@
 					\frac{45}{29^{ \frac{3}{2} }}\hat{k}
 					\Big{)}*10^3\frac{N}{C}\\
 					%
-					\Aboxed{
+					\Aboxed
+					{
 						\vec{E}_t &= \Big{(}
 						\frac{-81}{13^{ \frac{3}{2} }}\hat{\imath}-
 						\Big{(} \frac{54}{13^{ \frac{3}{2} }}+
@@ -297,7 +300,8 @@
 					\frac{90}{29^{ \frac{3}{2} }}\hat{k}
 					\Big{)}*10^{-3}N\\
 					%
-					\Aboxed{
+					\Aboxed
+					{
 						\vec{F}_t &= \Big{(}
 						\frac{162}{13^{ \frac{3}{2} }} \hat{\imath}+
 						\Big{(}
@@ -324,6 +328,39 @@
 			\item La tensión en la cuerda del punto B.
 
 			\item Las reacciones en A.
+		\end{enumerate}
+		\begin{align*}
+			\vec{E} &= \frac{5000N}{C} \hat{\jmath} && \text{Campo eléctrico}\\
+			\vec{P}_1 &= -80N\hat{\jmath} && \text{Peso de la barra}\\
+			\vec{P}_2 &= -50N\hat{\jmath} && \text{Peso de la esfera}\\
+			\vec{F} &= -20N \hat{\jmath} && \text{Fuerza a la esfera}\\
+			\vec{R} & && \text{Reacción}\\
+			\vec{T}_C &= \vec{P}_2 + \vec{F} && \text{Tensión en C}\\
+			\vec{T}_B & && \text{Tensión en B}\\
+			\hat{AB} &= \frac{2\sqrt{2}}{3} \hat{\imath}+
+			\frac{1}{3} \hat{\jmath} && \text{Vector unitario de la barra}\\
+			\vec{AB} & && \text{Distancia hasta el punto B}
+		\end{align*}
+
+		\begin{enumerate}
+			\item
+				\begin{align*}
+					\vec{T}_C &= \vec{P}_2 + \vec{F}\\
+					\vec{T}_C &= -50N\hat{\jmath}-20N\hat{\jmath}\\
+					\Aboxed
+					{
+						\vec{T}_C &= -70N\hat{\jmath}
+					}
+				\end{align*}
+			\item
+				\begin{align*}
+					\sum \uptau &= \vec{P}_1\cdot\hat{AB}* \frac{L}{2}+
+					\vec{T}_C\cdot\hat{AB}*L+
+					\cancel{\vec{R}*0m}+
+					\uptau_B=0\\
+					%
+					\uptau_B &= \frac{-110N}{3}L = \vec{T}_B \cdot\vec{AB}
+				\end{align*}
 		\end{enumerate}
 \end{enumerate}
 % }}}
